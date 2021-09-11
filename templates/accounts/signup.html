@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}THEDARESAY - Signup{% endblock title %}
+ {% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/pages/accounts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/partials/header.css' %}">
+  {% endblock stylesheets %}
+{% block main %}
+    {% include 'partials/header.html' %}
+      <form method="post" class="auth_card">
+          <h2>SINGUP</h2>
+
+          <div class="input_group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="_nsandhu">
+          </div>
+          <div class="input_group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="jhon123@gmail.com">
+          </div>
+  
+          <div class="input_group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="*******">
+          </div>
+           <div class="input_group">
+            <label for="contifrm_password">Confirm Password</label>
+            <input type="contifrm_password" id="contifrm_password" name="contifrm_password" placeholder="*******">
+          </div>
+          <div class="continue_btn">
+            <button class="btn btn_contained">
+                  Continue
+            </button>
+          </div>
+          <p>Already have an account? <a href="{% url 'login-page' %}">Login here</a></p>
+      </form>
+    </div>
+    
+{% endblock main %}

@@ -1,0 +1,77 @@
+.auth_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 8px black;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 100px;
+}
+
+.auth_card > h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.auth_card > .input_group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.auth_card > .input_group > label, input {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.auth_card > .input_group > input {
+   padding: 1rem;
+   outline: none;
+   border: 1px solid black;
+   font-size: 1.1rem;
+}
+
+.auth_card > .input_group > input:focus {
+    padding: 1rem;
+    outline: none;
+    border: 2px solid black;
+ }
+
+.forgot_password {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.continue_btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.auth_card > p {
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input_htext {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    color: rgba(0,0,0,0.90);
+}
